@@ -2,22 +2,22 @@
   
     
         "post0": {
-            "title": "Football Quiz",
-            "content": "def question_and_answer(prompt): print(&quot;Question: &quot; + prompt) msg = input(11) print(&quot;Answer: &quot; + msg) question_and_answer(&quot;How many players are their on defense?&quot;) . Question: How many players are their on defense? Answer: 11 .",
-            "url": "https://khalidfarahhh.github.io/project-1/collegeboard/2022/08/26/notebookquiz.html",
-            "relUrl": "/collegeboard/2022/08/26/notebookquiz.html",
-            "date": " • Aug 26, 2022"
+            "title": "First Jupyter Notebook",
+            "content": "print(&quot;hello class&quot;) . hello class .",
+            "url": "https://khalidfarahhh.github.io/project-1/jupyter/2022/08/27/_08_21_1st_Notebook-(1).html",
+            "relUrl": "/jupyter/2022/08/27/_08_21_1st_Notebook-(1).html",
+            "date": " • Aug 27, 2022"
         }
         
     
   
     
         ,"post1": {
-            "title": "First Jupyter Notebook",
-            "content": "print(&quot;hello class&quot;) . hello class .",
-            "url": "https://khalidfarahhh.github.io/project-1/jupyter/2022/08/25/_08_21_1st_Notebook-(1).html",
-            "relUrl": "/jupyter/2022/08/25/_08_21_1st_Notebook-(1).html",
-            "date": " • Aug 25, 2022"
+            "title": "Football Quiz",
+            "content": "def question_and_answer(prompt): print(&quot;Question: &quot; + prompt) msg = input(11) print(&quot;Answer: &quot; + msg) question_and_answer(&quot;How many players are their on defense?&quot;) . Question: How many players are their on defense? Answer: 11 .",
+            "url": "https://khalidfarahhh.github.io/project-1/collegeboard/2022/08/26/notebookquiz.html",
+            "relUrl": "/collegeboard/2022/08/26/notebookquiz.html",
+            "date": " • Aug 26, 2022"
         }
         
     
