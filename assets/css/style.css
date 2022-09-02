@@ -427,13 +427,13 @@ pre code { font-size: 15px !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-.language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
+.language-python + .language-plaintext { border-left: 1px solid #b42929; margin-left: 1rem !important; }
 
 [class^="language-"]:not(.language-plaintext) pre, [class^="language-"]:not(.language-plaintext) code { background-color: #323443 !important; color: #ff5555; }
 
-.language-python + .language-plaintext code { background-color: white !important; }
+.language-python + .language-plaintext code { background-color: blue !important; }
 
-.language-python + .language-plaintext pre { background-color: white !important; }
+.language-python + .language-plaintext pre { background-color: red !important; }
 
 .input_area pre, .input_area div { margin-bottom: 1.0rem !important; margin-top: 1.5rem !important; padding-bottom: 0 !important; padding-top: 0 !important; background: #323443 !important; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: Menlo, Monaco, Consolas, "Lucida Console", Roboto, Ubuntu, monospace; border-radius: 5px; font-size: 105%; }
 
