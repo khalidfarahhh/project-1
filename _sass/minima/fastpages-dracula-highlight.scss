@@ -24,7 +24,7 @@ $dt-green-light: rgb(172, 229, 145);
 [class^="language-"]:not(.language-plaintext) pre,
 [class^="language-"]:not(.language-plaintext) code {
     background-color: $dt-code-cell-background !important;
-    color: $dt-gray-light;
+    color: $dt-white-black;
 }
 
 .language-python + .language-plaintext code { background-color: white !important; }
