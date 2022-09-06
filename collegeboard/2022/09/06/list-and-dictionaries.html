@@ -149,10 +149,12 @@ window.onload = wrap_img;
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
     <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Khalid"</span><span class="p">,</span>
     <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Farah"</span><span class="p">,</span>
-    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"July 7th"</span><span class="p">,</span>
-    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"July 7th 2006"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego, California"</span><span class="p">,</span>
     <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"Khalidfarah211@gmail.com"</span><span class="p">,</span>
-    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"None yet their on the way"</span><span class="p">]</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"None yet their on the way"</span><span class="p">],</span>
+    <span class="s2">"Pets"</span><span class="p">:</span> <span class="s2">"No pets thankfully"</span><span class="p">,</span>
+    <span class="s2">"Siblings"</span><span class="p">:</span> <span class="s2">"One brother with an age of 21 and a sister who is 19 years old"</span>
    
 <span class="p">})</span>
 
@@ -160,6 +162,8 @@ window.onload = wrap_img;
     <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"FirstName"</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"LastName"</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Residence:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Residence"</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Birth Day:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"DOB"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Pets owned:"</span><span class="p">,</span> <span class="n">d_rec</span> <span class="p">[</span><span class="s2">"Pets"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Siblings:"</span><span class="p">,</span> <span class="n">d_rec</span> <span class="p">[</span><span class="s2">"Siblings"</span><span class="p">])</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Cars: "</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>  <span class="c1"># end="" make sure no return occurs</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"Owns_Cars"</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
     <span class="nb">print</span><span class="p">()</span>
@@ -187,8 +191,10 @@ window.onload = wrap_img;
 <pre>For loop output
 
 Khalid Farah
-	 Residence: San Diego
-	 Birth Day: July 7th
+	 Residence: San Diego, California
+	 Birth Day: July 7th 2006
+	 Pets owned: No pets thankfully
+	 Siblings: One brother with an age of 21 and a sister who is 19 years old
 	 Cars: None yet their on the way
 
 </pre>
