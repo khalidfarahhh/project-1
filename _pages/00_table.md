@@ -1,5 +1,5 @@
 ---
-Layout: Page
+Layout: page
 Permalink: /Weeklywork/
 Title: Weekly Work
 ---
