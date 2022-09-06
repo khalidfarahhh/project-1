@@ -70,10 +70,10 @@
   
   
       ,"page0": {
-          "title": "",
+          "title": "Weekly Work",
           "content": "Week Projects . 0 | My First Jupyter Notebook,—&gt; My First Markdown. | . 1 | Football quiz,—&gt; Bash tools check. | . 2 | Dark mode,—&gt; List and Dictionaries. | .",
-          "url": "https://khalidfarahhh.github.io/project-1/_pages/00_table.html",
-          "relUrl": "/_pages/00_table.html",
+          "url": "https://khalidfarahhh.github.io/project-1/weeklywork/",
+          "relUrl": "/weeklywork/",
           "date": ""
       }
       
