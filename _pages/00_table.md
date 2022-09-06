@@ -1,7 +1,7 @@
 ---
-Layout: page
-Permalink: /Weeklywork/
-Title: Weekly Work
+layout: page
+permalink: /weeklywork/
+title: Weekly Work
 ---
 
 | Week      | Projects     |
