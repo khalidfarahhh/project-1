@@ -8,4 +8,4 @@ categories: [fastpages, markdown]
 title: Ap Classroom completing questions
 ---
 
-![]({{site.baseurl}}/images/assignment.png "https://github.com/fastai/fastpages")
+![]({{site.baseurl}}/images/apclassroompt.2 "https://github.com/fastai/fastpages")
