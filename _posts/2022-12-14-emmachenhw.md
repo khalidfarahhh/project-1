@@ -5,7 +5,7 @@ badges: true
 comments: true
 author: Khalid farah
 categories: [fastpages, markdown]
-title: Leesson 14-14 hacks
+title: Leesson 14-15 hacks
 ---
 
 # Reflection
@@ -13,9 +13,10 @@ title: Leesson 14-14 hacks
 
 
 # Multiple Choice
-B) a random integer between 'a' and 'b' inclusive
-A) x = start, y = stop, z = step
-A) random.item() does not exist
+- B) a random integer between 'a' and 'b' inclusive
+- A) x = start, y = stop, z = step
+- A) random.item() does not exist
+
 # Short Answer
 Libraries are convenient because they provide procedures and prewritten code to maximize the efficiency of programmers
 This procedure takes a list of strings and returns who will buy the meal today
