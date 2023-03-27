@@ -4,9 +4,9 @@
         "post0": {
             "title": "First Jupyter Notebook",
             "content": "print(&quot;hello class&quot;) . hello class .",
-            "url": "https://khalidfarahhh.github.io/project-1/jupyter/2023/03/21/_08_21_1st_Notebook-(1).html",
-            "relUrl": "/jupyter/2023/03/21/_08_21_1st_Notebook-(1).html",
-            "date": " • Mar 21, 2023"
+            "url": "https://khalidfarahhh.github.io/project-1/jupyter/2023/03/26/_08_21_1st_Notebook-(1).html",
+            "relUrl": "/jupyter/2023/03/26/_08_21_1st_Notebook-(1).html",
+            "date": " • Mar 26, 2023"
         }
         
     
@@ -15,9 +15,9 @@
         ,"post1": {
             "title": "HTML Fragments and Javascript Kernel",
             "content": "function logIt(output) { console.log(output); } logIt(&quot;Hello everyone!&quot;); . Hello everyone! . function logt(output) { console.log(output); } // calls to the function logt(&quot;Mr. Mortensen IS COOL&quot;); . Mr. Mortensen IS COOL . // define a function to hold data for a Person function Person(name, nationality, age) { this.name = name; this.nationality = nationality; this.age = age; this.role = &quot;&quot;; } // define a setter for role in Person data Person.prototype.setRole = function(role) { this.role = role; } // defines the manager var manager = new Person(&quot;Fortnite&quot;, &quot;Fortnite&quot;, 70); manager.setRole(&quot;Manager&quot;); // JSON conversion from object to a string Person.prototype.toJSON = function() { const obj = {name: this.name, nationality: this.nationality, age: this.age, role: this.role}; const json = JSON.stringify(obj); return json; } // player data var players = [ new Person(&quot;Ty olsen&quot;, &quot;Mexican&quot;, 16), new Person(&quot;Khalid Farah&quot;, &quot;Palestinian&quot;, 16), new Person(&quot;Jeffery Fonseca&quot;, &quot;African-American&quot;, 17), new Person(&quot;Eli Gilmour&quot;, &quot;Caucasian&quot;, 16), new Person(&quot;Chris Albertson&quot;, &quot;Syrian&quot;, 16), new Person(&quot;Ryan McWeeny&quot;, &quot;Caucasian&quot;, 16), ]; function Squad(Leader, players){ this.manager = Leader; this.squad = [Leader]; this.players = players; this.players.forEach(player =&gt; {player.setRole(&quot;Player&quot;); this.squad.push(player); }); this.json = []; this.squad.forEach(player =&gt; this.json.push(player.toJSON())); } var FUT = new Squad(manager, players); Squad.prototype._toHtml = function() { var style = ( &quot;display:inline-block;&quot; + &quot;background:black;&quot; + &quot;border: 2px solid grey;&quot; + &quot;box-shadow: 0.8em 0.4em 0.4em grey;&quot; ); // HTML Body of Table is build as a series of concatenations (+=) var body = &quot;&quot;; // Heading for Array Columns body += &quot;&lt;tr&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Name&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Nationality&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Age&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Occupation&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;/tr&gt;&quot;; // Data of Array, iterate through each row of lakers team for (var row of FUT.squad) { // tr for each row, a new line body += &quot;&lt;tr&gt;&quot;; // td for each column of data body += &quot;&lt;td&gt;&quot; + row.name + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.nationality + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.age + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.role + &quot;&lt;/td&gt;&quot;; // tr to end line body += &quot;&lt;tr&gt;&quot;; } // Build and HTML fragment of div, table, table body return ( &quot;&lt;div style=&#39;&quot; + style + &quot;&#39;&gt;&quot; + &quot;&lt;table&gt;&quot; + body + &quot;&lt;/table&gt;&quot; + &quot;&lt;/div&gt;&quot; ); }; // IJavaScript HTML processor receive parameter of defined HTML fragment $$.html(FUT._toHtml()); . NameNationalityAgeOccupation . Fortnite | Fortnite | 70 | Manager | Ty olsen | Mexican | 16 | Player | Khalid Farah | Palestinian | 16 | Player | Jeffery Fonseca | African-American | 17 | Player | Eli Gilmour | Caucasian | 16 | Player | Chris Albertson | Syrian | 16 | Player | Ryan McWeeny | Caucasian | 16 | Player | &lt;/table&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; . . .",
-            "url": "https://khalidfarahhh.github.io/project-1/collegeboard/2023/03/21/HTMLFrag+JSkernel.html",
-            "relUrl": "/collegeboard/2023/03/21/HTMLFrag+JSkernel.html",
-            "date": " • Mar 21, 2023"
+            "url": "https://khalidfarahhh.github.io/project-1/collegeboard/2023/03/26/HTMLFrag+JSkernel.html",
+            "relUrl": "/collegeboard/2023/03/26/HTMLFrag+JSkernel.html",
+            "date": " • Mar 26, 2023"
         }
         
     
@@ -365,8 +365,8 @@
   
     
         ,"post33": {
-            "title": "MCQ#2 Corrections",
-            "content": "I got a 42/50 . I didnt read the question all the way to select all that apply . Once again didnt read the question for all that apply . Just got it wrong . Was confused and didnt know . Google was wrong . I just got it wrong . Incorrect choice by me . Another incorrect choice by me .",
+            "title": "MCQ#4 Corrections",
+            "content": "I got a 23/25 . I didnt read the question all the way and mis selected the right answer . Searched it up and was let down by google .",
             "url": "https://khalidfarahhh.github.io/project-1/fastpages/markdown/2022/01/30/MCQ2corrections.html",
             "relUrl": "/fastpages/markdown/2022/01/30/MCQ2corrections.html",
             "date": " • Jan 30, 2022"
