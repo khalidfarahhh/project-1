@@ -433,9 +433,23 @@ producer: [&#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Joel Little&#39
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Invalid Search
-</pre>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/khalidfarah/vscode/project-1/_notebooks/2023-03-29-DS-hashmaps.ipynb Cell 12</span> in <span class="ansi-cyan-fg">&lt;cell line: 9&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/khalidfarah/vscode/project-1/_notebooks/2023-03-29-DS-hashmaps.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span>     else:
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/khalidfarah/vscode/project-1/_notebooks/2023-03-29-DS-hashmaps.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span>         print(lover_album.get(search.lower()))
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/khalidfarah/vscode/project-1/_notebooks/2023-03-29-DS-hashmaps.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span> search()
+
+<span class="ansi-green-intense-fg ansi-bold">/home/khalidfarah/vscode/project-1/_notebooks/2023-03-29-DS-hashmaps.ipynb Cell 12</span> in <span class="ansi-cyan-fg">search</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/khalidfarah/vscode/project-1/_notebooks/2023-03-29-DS-hashmaps.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1&#39;&gt;2&lt;/a&gt;</span> def search():
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/khalidfarah/vscode/project-1/_notebooks/2023-03-29-DS-hashmaps.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2&#39;&gt;3&lt;/a&gt;</span>     search = input(&#34;What would you like to know about the album?&#34;)
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/khalidfarah/vscode/project-1/_notebooks/2023-03-29-DS-hashmaps.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span>     if lover_album.get(search.lower()) == None:
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/khalidfarah/vscode/project-1/_notebooks/2023-03-29-DS-hashmaps.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span>         print(&#34;Invalid Search&#34;)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/khalidfarah/vscode/project-1/_notebooks/2023-03-29-DS-hashmaps.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span>     else:
+
+<span class="ansi-red-fg">NameError</span>: name &#39;lover_album&#39; is not defined</pre>
 </div>
 </div>
 
@@ -460,6 +474,75 @@ producer: [&#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Joel Little&#39
 <li><p>For Mr. Yeung's class: Justify your favorite Taylor Swift song, answer may effect seed</p>
 </li>
 </ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_turn_album</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;My Turn&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="s2">&quot;Lil Baby&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;genre&quot;</span><span class="p">:</span> <span class="s2">&quot;Trap&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;songs&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;Get Ugly&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Heatin Up&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;How&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Grace&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Woah&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Live Off My Closet&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Same Thing&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Emotionally Scarred&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Commercial&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Forever&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Can&#39;t Explain&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;No Sucker&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Sum 2 Prove&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;We Should&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Catch The Sun&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Consistent&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+
+<span class="c1"># Access the dictionary keys and values</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Album title: &quot;</span> <span class="o">+</span> <span class="n">my_turn_album</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Artist: &quot;</span> <span class="o">+</span> <span class="n">my_turn_album</span><span class="p">[</span><span class="s2">&quot;artist&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Genre: &quot;</span> <span class="o">+</span> <span class="n">my_turn_album</span><span class="p">[</span><span class="s2">&quot;genre&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Songs: &quot;</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">my_turn_album</span><span class="p">[</span><span class="s2">&quot;songs&quot;</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Album title: My Turn
+Artist: Lil Baby
+Genre: Trap
+Songs: Get Ugly, Heatin Up, How, Grace, Woah, Live Off My Closet, Same Thing, Emotionally Scarred, Commercial, Forever, Can&#39;t Explain, No Sucker, Sum 2 Prove, We Should, Catch The Sun, Consistent
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>DIAGRAM IN GITHUB</p>
 
 </div>
 </div>
