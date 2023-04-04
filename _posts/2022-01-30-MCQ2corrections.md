@@ -10,7 +10,12 @@ title: MCQ#4 Corrections
  
 I got a 46/50
 
-![]({{site.baseurl}}/images/Screenshot 2023-03-27 130414.png)
+![]({{site.baseurl}}/images/Screenshot 2023-04-04 130110.png)
 
-![]({{site.baseurl}}/images/Screenshot 2023-03-27 130428.png)
+![]({{site.baseurl}}/images/Screenshot 2023-04-04 130125.png)
+
+![]({{site.baseurl}}/images/Screenshot 2023-04-04 130140.png)
+
+![]({{site.baseurl}}/images/Screenshot 2023-04-04 130159.png)
+
 
