@@ -24,15 +24,15 @@ List specification of your Computer, or Computers if working as Pair/Trio
 - OS: Windows 10
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
-- Input devices
-- Output devices
-- Program File
-- Program Code
-- Processes
-- Ports
-- Data File
-- Inspect Running Code
-- Inspect Variables
+- Input devices :These are devices used to enter data into a computer. Examples of input devices include keyboards, mice, and touchscreens.
+- Output devices: These are devices used to display or output data from a computer. Examples of output devices include monitors, printers, and speakers.
+- Program File: This is a file that contains instructions for a computer program. It may contain code, data, or both.
+- Program Code: This is the set of instructions that tells a computer what to do. It is usually written in a programming language such as Python or Java.
+- Processes: These are programs or tasks that are running on a computer. They can be viewed in the task manager or activity monitor.
+- Ports: These are connectors on a computer that allow devices to communicate with it. Examples of ports include USB, HDMI, and Ethernet.
+- Data File: This is a file that contains data such as text, images, or videos. It can be opened and edited using a program that supports its file format.
+- Inspect Running Code: This is the process of examining the code that is currently running on a computer. It can be done using a debugger or other developer tools.
+- Inspect Variables: This is the process of examining the values of variables in a program. It can be done using a debugger or other developer tools.
 
 
 ![Computer Hardware]({{site.baseurl}}/images/cpu.jpeg)
@@ -52,16 +52,24 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - Bandwidth is usually measured in bits per second
 
 - Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
-    - Path 
-    - Route
-    - Computer System
-    - Computer Device
-    - Bandwidth
-    - Computer Network
+    - Path: A
+    - Route: E
+    - Computer System: B
+    - Computer Device: C
+    - Bandwidth: D
+    - Computer Network: F
 
 > Watch/review College Board Daily Video 4.1.2
 
 - Complete True of False Questions
+- T
+- F
+- F
+- T
+- F
+- F
+- T
+
 
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
@@ -80,6 +88,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - The world wide web uses the internet
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
+![Image]({{site.baseurl}}/images/1download.png)
 
 ![Full Stack]({{site.baseurl}}/images/fullstack.png)
 
@@ -114,12 +123,13 @@ The "network" layer is responsible for ***routing data packets between networks*
 > Watch both Daily videos for 4.2
 
 - Complete the network activity, summarize your understanding of fault tolerance.
-
+Fault tolerance refers to the ability of a system to continue functioning even if some of its components fail or malfunction
 
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
 
-- What is naturally Distributed in Frontend/Backend archeticture?  
+- What is naturally Distributed in Frontend/Backend archeticture? 
+Frontend is responisble for userinterface and backend is more data 
 
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
 
