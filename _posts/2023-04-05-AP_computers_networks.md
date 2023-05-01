@@ -123,7 +123,7 @@ The "network" layer is responsible for ***routing data packets between networks*
 > Watch both Daily videos for 4.2
 
 - Complete the network activity, summarize your understanding of fault tolerance.
-Fault tolerance refers to the ability of a system to continue functioning even if some of its components fail or malfunction
+- Fault tolerance refers to the ability of a system to continue functioning even if some of its components fail or malfunction
 
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
@@ -132,7 +132,7 @@ Fault tolerance refers to the ability of a system to continue functioning even i
 Frontend is responisble for userinterface and backend is more data 
 
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
-
+- this command does not contain options for parallel computing within the Gunicorn server that runs Python.
 
 > Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.
 - Review this [article](https://www.anyscale.com/blog/writing-your-first-distributed-python-application-with-ray)...  Can you get parallel code on images to work more effectively?  I have not tried Ray.
