@@ -28,3 +28,5 @@ title: Logic Hacks
 ![]({{site.baseurl}}/images/Screenshot 2023-05-02 131619.png)
 ![]({{site.baseurl}}/images/Screenshot 2023-05-02 131641.png)
 
+# Git hub hacks 
+Netlify is a hosting service that offers a number of features that set it apart from other hosting services. One major advantage of Netlify is that it provides a simple and intuitive platform for building, deploying, and managing modern web projects.
