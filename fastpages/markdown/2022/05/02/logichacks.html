@@ -9,8 +9,8 @@
 <meta property="og:title" content="Logic Hacks" />
 <meta name="author" content="Khalid farah" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="logic gates Logic gates can be used to execute basic computer functions by implementing Boolean logic operations on binary inputs, which can be used to perform arithmetic, comparison, and control operations in a computer’s central processing unit (CPU) and other digital circuits. Boolean operations are abstract mathematical operations defined in Boolean algebra, while logic gates are physical devices or circuits that implement these operations by controlling the flow of electricity through them. Boolean operations are the abstract concepts used to describe logical relationships between variables, while logic gates are the physical components that perform these operations in digital circuits. I wasnt locked in got 2 wrong" />
-<meta property="og:description" content="logic gates Logic gates can be used to execute basic computer functions by implementing Boolean logic operations on binary inputs, which can be used to perform arithmetic, comparison, and control operations in a computer’s central processing unit (CPU) and other digital circuits. Boolean operations are abstract mathematical operations defined in Boolean algebra, while logic gates are physical devices or circuits that implement these operations by controlling the flow of electricity through them. Boolean operations are the abstract concepts used to describe logical relationships between variables, while logic gates are the physical components that perform these operations in digital circuits. I wasnt locked in got 2 wrong" />
+<meta name="description" content="&lt;!DOCTYPE html&gt; Click the Circles Click the Circles" />
+<meta property="og:description" content="&lt;!DOCTYPE html&gt; Click the Circles Click the Circles" />
 <link rel="canonical" href="https://khalidfarahhh.github.io/project-1/fastpages/markdown/2022/05/02/logichacks.html" />
 <meta property="og:url" content="https://khalidfarahhh.github.io/project-1/fastpages/markdown/2022/05/02/logichacks.html" />
 <meta property="og:site_name" content="Khalid Farah" />
@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Logic Hacks" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Khalid farah"},"dateModified":"2022-05-02T00:00:00-05:00","datePublished":"2022-05-02T00:00:00-05:00","description":"logic gates Logic gates can be used to execute basic computer functions by implementing Boolean logic operations on binary inputs, which can be used to perform arithmetic, comparison, and control operations in a computer’s central processing unit (CPU) and other digital circuits. Boolean operations are abstract mathematical operations defined in Boolean algebra, while logic gates are physical devices or circuits that implement these operations by controlling the flow of electricity through them. Boolean operations are the abstract concepts used to describe logical relationships between variables, while logic gates are the physical components that perform these operations in digital circuits. I wasnt locked in got 2 wrong","headline":"Logic Hacks","mainEntityOfPage":{"@type":"WebPage","@id":"https://khalidfarahhh.github.io/project-1/fastpages/markdown/2022/05/02/logichacks.html"},"url":"https://khalidfarahhh.github.io/project-1/fastpages/markdown/2022/05/02/logichacks.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Khalid farah"},"dateModified":"2022-05-02T00:00:00-05:00","datePublished":"2022-05-02T00:00:00-05:00","description":"&lt;!DOCTYPE html&gt; Click the Circles Click the Circles","headline":"Logic Hacks","mainEntityOfPage":{"@type":"WebPage","@id":"https://khalidfarahhh.github.io/project-1/fastpages/markdown/2022/05/02/logichacks.html"},"url":"https://khalidfarahhh.github.io/project-1/fastpages/markdown/2022/05/02/logichacks.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/project-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://khalidfarahhh.github.io/project-1/feed.xml" title="Khalid Farah" /><link rel="shortcut icon" type="image/x-icon" href="/project-1/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -102,12 +102,74 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#click-the-circles">Click the Circles</a></li>
 <li class="toc-entry toc-h1"><a href="#logic-gates">logic gates</a></li>
 <li class="toc-entry toc-h1"><a href="#binary-logic">Binary Logic</a></li>
 <li class="toc-entry toc-h1"><a href="#binary-math">Binary Math</a></li>
 <li class="toc-entry toc-h1"><a href="#api-hacks">Api hacks</a></li>
 <li class="toc-entry toc-h1"><a href="#git-hub-hacks">Git hub hacks</a></li>
-</ul><h1 id="logic-gates">
+</ul><body>
+<p>&lt;!DOCTYPE html&gt;</p>
+
+
+    <title>Click the Circles</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+#game-container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+.circle {
+            width: 80px;
+            height: 80px;
+            background-color: #ff4081;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+    </style>
+
+
+    <h1>
+<a class="anchor" href="#click-the-circles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Click the Circles</h1>
+    <div id="game-container"></div>
+<script>
+        function startGame() {
+            const gameContainer = document.getElementById('game-container');
+            const circles = [];
+function createCircle() {
+                const circle = document.createElement('div');
+                circle.classList.add('circle');
+                circle.addEventListener('click', removeCircle);
+                gameContainer.appendChild(circle);
+                circles.push(circle);
+            }
+function removeCircle() {
+                const index = circles.indexOf(this);
+                if (index > -1) {
+                    circles.splice(index, 1);
+                }
+                gameContainer.removeChild(this);
+            }
+setInterval(createCircle, 1000);
+        }
+startGame();
+    </script>
+
+
+
+<h1 id="logic-gates">
 <a class="anchor" href="#logic-gates" aria-hidden="true"><span class="octicon octicon-link"></span></a>logic gates</h1>
 <ol>
   <li>Logic gates can be used to execute basic computer functions by implementing Boolean logic operations on binary inputs, which can be used to perform arithmetic, comparison, and control operations in a computer’s central processing unit (CPU) and other digital circuits.</li>
@@ -138,7 +200,7 @@ window.onload = wrap_img;
 <h1 id="git-hub-hacks">
 <a class="anchor" href="#git-hub-hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git hub hacks</h1>
 <p>Netlify is a hosting service that offers a number of features that set it apart from other hosting services. One major advantage of Netlify is that it provides a simple and intuitive platform for building, deploying, and managing modern web projects.</p>
-
+</body>
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
         repo="khalidfarahhh/project-1"
