@@ -1,0 +1,90 @@
+---
+layout: default
+permalink: /search/
+title: Java script 
+search_exclude: true
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess the Color</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Guess the Color</h1>
+    <div id="color-box"></div>
+    <input type="text" id="guess-input" placeholder="Enter your guess">
+    <button id="check-btn">Check</button>
+    <p id="result-text"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+    #color-box {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border: 2px solid black;
+}
+
+#guess-input {
+    margin: 20px 0;
+    padding: 5px;
+}
+
+#check-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+#result-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+</style>
+<script>
+    // Generate a random RGB color
+function generateRandomColor() {
+    var r = Math.floor(Math.random() * 256);
+    var g = Math.floor(Math.random() * 256);
+    var b = Math.floor(Math.random() * 256);
+    return "rgb(" + r + ", " + g + ", " + b + ")";
+}
+
+// Set the color of the color box
+function setColor(color) {
+    var colorBox = document.getElementById("color-box");
+    colorBox.style.backgroundColor = color;
+}
+
+// Check if the guess is correct
+function checkGuess() {
+    var guessInput = document.getElementById("guess-input");
+    var guess = guessInput.value.toLowerCase();
+
+    if (guess === generatedColor.toLowerCase()) {
+        document.getElementById("result-text").textContent = "Congratulations! You guessed it right!";
+    } else {
+        document.getElementById("result-text").textContent = "Oops! Wrong guess. Try again!";
+    }
+
+    // Clear the guess input
+    guessInput.value = "";
+    // Generate a new color
+    generatedColor = generateRandomColor();
+    // Set the new color in the color box
+    setColor(generatedColor);
+}
+
+// Generate the initial color
+var generatedColor = generateRandomColor();
+// Set the initial color in the color box
+setColor(generatedColor);
+
+// Add event listener to the check button
+var checkBtn = document.getElementById("check-btn");
+checkBtn.addEventListener("click", checkGuess);
+
+</script>
