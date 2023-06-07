@@ -1,84 +1,77 @@
 ---
 layout: default
-permalink: /search/
+permalink: /js/
 title: Java script 
-search_exclude: true
 ---
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Guess the Color</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Catch the Cat</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #game-container {
+            width: 500px;
+            height: 500px;
+            background-color: #f1f1f1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #cat {
+            width: 50px;
+            height: 50px;
+            background-color: orange;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: top 1s, left 1s;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>Guess the Color</h1>
-    <div id="color-box"></div>
-    <input type="text" id="guess-input" placeholder="Enter your guess">
-    <button id="check-btn">Check</button>
-    <p id="result-text"></p>
+    <h1>Catch the Cat</h1>
+    <div id="game-container">
+        <div id="cat"></div>
+    </div>
 
-    <script src="script.js"></script>
+    <script>
+        function startGame() {
+            const gameContainer = document.getElementById('game-container');
+            const cat = document.getElementById('cat');
+            const containerWidth = gameContainer.offsetWidth;
+            const containerHeight = gameContainer.offsetHeight;
+            const catWidth = cat.offsetWidth;
+            const catHeight = cat.offsetHeight;
+            let score = 0;
+
+            function getRandomPosition(max) {
+                return Math.floor(Math.random() * max);
+            }
+
+            function moveCat() {
+                const targetTop = getRandomPosition(containerHeight - catHeight);
+                const targetLeft = getRandomPosition(containerWidth - catWidth);
+                cat.style.top = targetTop + 'px';
+                cat.style.left = targetLeft + 'px';
+            }
+
+            function increaseScore() {
+                score++;
+                cat.innerText = score;
+            }
+
+            cat.addEventListener('click', increaseScore);
+            setInterval(moveCat, 1000);
+        }
+
+        startGame();
+    </script>
 </body>
 </html>
-<style>
-    #color-box {
-    width: 200px;
-    height: 200px;
-    margin: 20px auto;
-    border: 2px solid black;
-}
-
-#guess-input {
-    margin: 20px 0;
-    padding: 5px;
-}
-
-#check-btn {
-    padding: 5px 10px;
-    font-size: 16px;
-}
-
-#result-text {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-</style>
-<script>
-    
-function generateRandomColor() {
-    var r = Math.floor(Math.random() * 256);
-    var g = Math.floor(Math.random() * 256);
-    var b = Math.floor(Math.random() * 256);
-    return "rgb(" + r + ", " + g + ", " + b + ")";
-}
-
-
-function setColor(color) {
-    var colorBox = document.getElementById("color-box");
-    colorBox.style.backgroundColor = color;
-}
-
-
-function checkGuess() {
-    var guessInput = document.getElementById("guess-input");
-    var guess = guessInput.value.toLowerCase();
-
-    if (guess === generatedColor.toLowerCase()) {
-        document.getElementById("result-text").textContent = "Congratulations! You guessed it right!";
-    } else {
-        document.getElementById("result-text").textContent = "Oops! Wrong guess. Try again!";
-    }
-
-    guessInput.value = "";
-    generatedColor = generateRandomColor();
-    setColor(generatedColor);
-}
-
-var generatedColor = generateRandomColor();
-setColor(generatedColor);
-
-var checkBtn = document.getElementById("check-btn");
-checkBtn.addEventListener("click", checkGuess);
-
-</script>
