@@ -2,6 +2,7 @@
 layout: post
 title: JavaScript Ticket 
 ---
+<!DOCTYPE html>
 <html>
 <head>
     <title>Click the Circles</title>
@@ -13,6 +14,7 @@ title: JavaScript Ticket
             justify-content: center;
             align-items: center;
             height: 100vh;
+            font-family: Arial, sans-serif;
         }
         #game-container {
             width: 400px;
@@ -29,6 +31,16 @@ title: JavaScript Ticket
             left: 50%;
             transform: translate(-50%, -50%);
             cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 24px;
+            transition: background-color 0.2s;
+        }
+        .circle:hover {
+            background-color: #ff6699;
         }
     </style>
 </head>
@@ -39,10 +51,12 @@ title: JavaScript Ticket
         function startGame() {
             const gameContainer = document.getElementById('game-container');
             const circles = [];
+            let score = 0;
             function createCircle() {
                 const circle = document.createElement('div');
                 circle.classList.add('circle');
                 circle.addEventListener('click', removeCircle);
+                circle.innerText = getRandomNumber(1, 10);
                 gameContainer.appendChild(circle);
                 circles.push(circle);
             }
@@ -52,10 +66,19 @@ title: JavaScript Ticket
                     circles.splice(index, 1);
                 }
                 gameContainer.removeChild(this);
+                score++;
+                updateScore();
+            }
+            function updateScore() {
+                document.getElementById('score').innerText = score;
+            }
+            function getRandomNumber(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
             }
             setInterval(createCircle, 1000);
         }
         startGame();
     </script>
+    <h2>Score: <span id="score">0</span></h2>
 </body>
 </html>
