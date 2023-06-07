@@ -8,70 +8,65 @@ categories: [fastpages, markdown]
 title: Logic Hacks
 ---
 
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Fruit Ninja</title>
+    <title>Click the Circles</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 #game-container {
-            width: 100%;
-            height: 100vh;
-            background-color: #f1f1f1;
+            width: 400px;
+            height: 400px;
             position: relative;
-            cursor: none;
         }
-.fruit {
-            width: 100px;
-            height: 100px;
-            background-image: url('fruit.png');
-            background-size: cover;
+.circle {
+            width: 80px;
+            height: 80px;
+            background-color: #ff4081;
+            border-radius: 50%;
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             cursor: pointer;
-            transition: top 2s cubic-bezier(0.45, 0, 0.55, 1), transform 1s ease-in-out;
         }
     </style>
 </head>
 <body>
-    <h1>Fruit Ninja</h1>
+    <h1>Click the Circles</h1>
     <div id="game-container"></div>
 <script>
         function startGame() {
             const gameContainer = document.getElementById('game-container');
-            const fruits = ['apple', 'banana', 'grape', 'orange', 'watermelon'];
-function getRandomPosition(max) {
-                return Math.floor(Math.random() * max);
+            const circles = [];
+function createCircle() {
+                const circle = document.createElement('div');
+                circle.classList.add('circle');
+                circle.addEventListener('click', removeCircle);
+                gameContainer.appendChild(circle);
+                circles.push(circle);
             }
-function createFruit() {
-                const fruit = document.createElement('div');
-                const randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
-                fruit.classList.add('fruit', randomFruit);
-                fruit.style.top = getRandomPosition(gameContainer.offsetHeight - 100) + 'px';
-                fruit.style.left = getRandomPosition(gameContainer.offsetWidth - 100) + 'px';
-                fruit.addEventListener('click', sliceFruit);
-                gameContainer.appendChild(fruit);
-setTimeout(() => {
-                    fruit.style.top = '100%';
-                    fruit.style.transform = 'translate(-50%, -50%) rotate(180deg)';
-                }, 1000);
+function removeCircle() {
+                const index = circles.indexOf(this);
+                if (index > -1) {
+                    circles.splice(index, 1);
+                }
+                gameContainer.removeChild(this);
             }
-function sliceFruit() {
-                this.classList.add('sliced');
-                setTimeout(() => {
-                    gameContainer.removeChild(this);
-                }, 1000);
-            }
-setInterval(createFruit, 1500);
+setInterval(createCircle, 1000);
         }
 startGame();
     </script>
 </body>
 </html>
+
 
 
 
