@@ -45,7 +45,7 @@ search_exclude: true
 
 </style>
 <script>
-    // Generate a random RGB color
+    
 function generateRandomColor() {
     var r = Math.floor(Math.random() * 256);
     var g = Math.floor(Math.random() * 256);
@@ -53,13 +53,13 @@ function generateRandomColor() {
     return "rgb(" + r + ", " + g + ", " + b + ")";
 }
 
-// Set the color of the color box
+
 function setColor(color) {
     var colorBox = document.getElementById("color-box");
     colorBox.style.backgroundColor = color;
 }
 
-// Check if the guess is correct
+
 function checkGuess() {
     var guessInput = document.getElementById("guess-input");
     var guess = guessInput.value.toLowerCase();
@@ -70,20 +70,14 @@ function checkGuess() {
         document.getElementById("result-text").textContent = "Oops! Wrong guess. Try again!";
     }
 
-    // Clear the guess input
     guessInput.value = "";
-    // Generate a new color
     generatedColor = generateRandomColor();
-    // Set the new color in the color box
     setColor(generatedColor);
 }
 
-// Generate the initial color
 var generatedColor = generateRandomColor();
-// Set the initial color in the color box
 setColor(generatedColor);
 
-// Add event listener to the check button
 var checkBtn = document.getElementById("check-btn");
 checkBtn.addEventListener("click", checkGuess);
 
