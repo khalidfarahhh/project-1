@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript Ticket 
 ---
-<!DOCTYPE html>
+
 <html>
 <head>
     <title>Click the Circles</title>
