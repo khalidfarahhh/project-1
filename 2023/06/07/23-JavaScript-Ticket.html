@@ -8,8 +8,8 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="JavaScript Ticket" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Click the Circles Click the Circles" />
-<meta property="og:description" content="Click the Circles Click the Circles" />
+<meta name="description" content="&lt;!DOCTYPE html&gt; Click the Circles Click the Circles Score: 0" />
+<meta property="og:description" content="&lt;!DOCTYPE html&gt; Click the Circles Click the Circles Score: 0" />
 <link rel="canonical" href="https://khalidfarahhh.github.io/project-1/2023/06/07/23-JavaScript-Ticket.html" />
 <meta property="og:url" content="https://khalidfarahhh.github.io/project-1/2023/06/07/23-JavaScript-Ticket.html" />
 <meta property="og:site_name" content="Khalid Farah" />
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="JavaScript Ticket" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-07T00:00:00-05:00","datePublished":"2023-06-07T00:00:00-05:00","description":"Click the Circles Click the Circles","headline":"JavaScript Ticket","mainEntityOfPage":{"@type":"WebPage","@id":"https://khalidfarahhh.github.io/project-1/2023/06/07/23-JavaScript-Ticket.html"},"url":"https://khalidfarahhh.github.io/project-1/2023/06/07/23-JavaScript-Ticket.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-07T00:00:00-05:00","datePublished":"2023-06-07T00:00:00-05:00","description":"&lt;!DOCTYPE html&gt; Click the Circles Click the Circles Score: 0","headline":"JavaScript Ticket","mainEntityOfPage":{"@type":"WebPage","@id":"https://khalidfarahhh.github.io/project-1/2023/06/07/23-JavaScript-Ticket.html"},"url":"https://khalidfarahhh.github.io/project-1/2023/06/07/23-JavaScript-Ticket.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/project-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://khalidfarahhh.github.io/project-1/feed.xml" title="Khalid Farah" /><link rel="shortcut icon" type="image/x-icon" href="/project-1/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -88,7 +88,8 @@ window.onload = wrap_img;
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <html>
+    <p>&lt;!DOCTYPE html&gt;</p>
+<html>
 <head>
     <title>Click the Circles</title>
     <style>
@@ -99,6 +100,7 @@ window.onload = wrap_img;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            font-family: Arial, sans-serif;
         }
         #game-container {
             width: 400px;
@@ -115,6 +117,16 @@ window.onload = wrap_img;
             left: 50%;
             transform: translate(-50%, -50%);
             cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 24px;
+            transition: background-color 0.2s;
+        }
+        .circle:hover {
+            background-color: #ff6699;
         }
     </style>
 </head>
@@ -125,10 +137,12 @@ window.onload = wrap_img;
         function startGame() {
             const gameContainer = document.getElementById('game-container');
             const circles = [];
+            let score = 0;
             function createCircle() {
                 const circle = document.createElement('div');
                 circle.classList.add('circle');
                 circle.addEventListener('click', removeCircle);
+                circle.innerText = getRandomNumber(1, 10);
                 gameContainer.appendChild(circle);
                 circles.push(circle);
             }
@@ -138,11 +152,20 @@ window.onload = wrap_img;
                     circles.splice(index, 1);
                 }
                 gameContainer.removeChild(this);
+                score++;
+                updateScore();
+            }
+            function updateScore() {
+                document.getElementById('score').innerText = score;
+            }
+            function getRandomNumber(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
             }
             setInterval(createCircle, 1000);
         }
         startGame();
     </script>
+    <h2>Score: <span id="score">0</span></h2>
 </body>
 </html>
 
